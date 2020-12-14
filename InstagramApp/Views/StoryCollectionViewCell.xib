@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14460.31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14460.20"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="StoryCollectionViewCell" id="gTV-IL-0wX" customClass="StoryCollectionViewCell" customModule="InstagramApp" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="90" height="110"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                <rect key="frame" x="0.0" y="0.0" width="90" height="110"/>
+                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                <subviews>
+                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="071-ne-2IZ">
+                        <rect key="frame" x="8" y="0.0" width="74" height="74"/>
+                        <constraints>
+                            <constraint firstAttribute="width" secondItem="071-ne-2IZ" secondAttribute="height" multiplier="1:1" id="SSy-fb-ZpZ"/>
+                        </constraints>
+                    </imageView>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Alx-iA-jab">
+                        <rect key="frame" x="8" y="78" width="74" height="17"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                </subviews>
+            </view>
+            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+            <constraints>
+                <constraint firstItem="071-ne-2IZ" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" constant="8" id="FSx-sP-rIu"/>
+                <constraint firstItem="Alx-iA-jab" firstAttribute="top" secondItem="071-ne-2IZ" secondAttribute="bottom" constant="4" id="NZG-72-fUS"/>
+                <constraint firstAttribute="trailing" secondItem="071-ne-2IZ" secondAttribute="trailing" constant="8" id="RCp-Cl-vVa"/>
+                <constraint firstItem="Alx-iA-jab" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" constant="8" id="VUR-3x-1vu"/>
+                <constraint firstAttribute="trailing" secondItem="Alx-iA-jab" secondAttribute="trailing" constant="8" id="rR6-wA-Gja"/>
+                <constraint firstItem="071-ne-2IZ" firstAttribute="top" secondItem="gTV-IL-0wX" secondAttribute="top" id="y62-rh-559"/>
+            </constraints>
+            <viewLayoutGuide key="safeArea" id="ZTg-uK-7eu"/>
+            <connections>
+                <outlet property="storyImage" destination="071-ne-2IZ" id="c2I-JQ-1UW"/>
+                <outlet property="userNameLabel" destination="Alx-iA-jab" id="yU3-BL-WwY"/>
+            </connections>
+            <point key="canvasLocation" x="72" y="48.575712143928037"/>
+        </collectionViewCell>
+    </objects>
+</document>
